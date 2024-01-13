@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/constraintLayout">
+
+        <TextView
+                android:text="Altura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_height"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="20sp"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/input_height"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintTop_toBottomOf="@+id/txt_height"/>
+        <TextView
+                android:text="Peso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_weight"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:textSize="20sp" app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintTop_toBottomOf="@+id/input_height" android:layout_marginTop="8dp"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/input_weight"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.497" app:layout_constraintTop_toBottomOf="@+id/txt_weight"/>
+        <Button
+                android:text="Calcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/btn_calculate"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_weight"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+                android:text="Cálculo de IMC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txt_title"
+                android:textSize="34sp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="64dp" android:textColor="#6750A3"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="95dp"
+                android:layout_height="43dp" android:id="@+id/txt_result"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title"
+                app:layout_constraintBottom_toTopOf="@+id/txt_height" android:textSize="20sp"
+                android:visibility="invisible"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="115dp"
+                android:layout_height="35dp" android:id="@+id/txt_classification"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="20sp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_result" android:layout_marginTop="24dp"
+                android:visibility="invisible"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
