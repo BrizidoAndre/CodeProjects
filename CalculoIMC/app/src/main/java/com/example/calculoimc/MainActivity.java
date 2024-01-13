@@ -1,5 +1,6 @@
 package com.example.calculoimc;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -54,21 +55,27 @@ public class MainActivity extends AppCompatActivity {
                 double height = Double.parseDouble(input_height.getText().toString());
                 double weight = Double.parseDouble(input_weight.getText().toString());
 
-                double IMC = (weight / (height * height));
+                double IMC = weight / (height * height);
 
                 result.setText(String.valueOf(IMC));
                 result.setVisibility(View.VISIBLE);
 
                 if (IMC < 20) {
-                    classe = "abaixo do peso";
+                    classe = "Abaixo do peso";
+                    classification.setTextColor(Color.parseColor("#50bfdb"));
                 } else if (IMC < 25) {
-                    classe = "normal";
+                    classe = "Normal";
+                    classification.setTextColor(Color.parseColor("#000000"));
                 } else if (IMC < 30) {
-                    classe = "sobrepeso";
+                    classe = "Sobrepeso";
+                    classification.setTextColor(Color.parseColor("#f98404"));
                 } else if (IMC < 35) {
-                    classe = "obesidade 1";
+                    classe = "Obesidade 1";
+                    classification.setTextColor(Color.parseColor("#fc5404"));
                 } else{
-                    classe = "obesidade 2";
+                    classe = "Obesidade 2";
+                    classification.setTextColor(Color.parseColor("#f2372e"));
+
                 }
 
                 classification.setText(classe);
