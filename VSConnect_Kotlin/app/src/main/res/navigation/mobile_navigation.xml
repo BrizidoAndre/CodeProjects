@@ -8,18 +8,13 @@
     <fragment
             android:id="@+id/nav_home"
             android:name="com.example.vsconnect_kotlin.views.EditarImagemFragment"
-            android:label="@string/menu_home"
-            tools:layout="@layout/fragment_home"/>
+            android:label="@string/menu_editar_imagem"
+            tools:layout="@layout/fragment_editar_imagem"/>
 
     <fragment
             android:id="@+id/nav_gallery"
             android:name="com.example.vsconnect_kotlin.views.ListaServicoFragment"
-            android:label="@string/menu_gallery"
-            tools:layout="@layout/fragment_gallery"/>
+            android:label="@string/menu_lista_servicos"
+            tools:layout="@layout/fragment_lista_servicos"/>
 
-    <fragment
-            android:id="@+id/nav_slideshow"
-            android:name="com.example.vsconnect_kotlin.views.slideshow.SlideshowFragment"
-            android:label="@string/menu_slideshow"
-            tools:layout="@layout/fragment_slideshow"/>
 </navigation>
