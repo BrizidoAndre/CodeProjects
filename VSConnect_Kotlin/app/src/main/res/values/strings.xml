@@ -7,6 +7,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+
+    //nomes do menu de navegação
+
     <string name="menu_login">Sair</string>
     <string name="menu_lista_servicos">Serviços</string>
     <string name="menu_editar_imagem">Editar Imagem</string>
