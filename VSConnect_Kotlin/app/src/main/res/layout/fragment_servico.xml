@@ -25,7 +25,6 @@
                 android:text="xxxx"
                 android:maxLength="20"
                 android:layout_marginRight="5dp"
-
         />
         <TextView
                 android:layout_width="0dp"
