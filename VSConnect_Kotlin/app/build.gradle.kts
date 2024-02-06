@@ -37,6 +37,8 @@ android {
 
 dependencies {
 
+    //Picasso
+    implementation ("com.squareup.picasso:picasso:2.8")
 
     //editar imagem - arredondar imagem
     implementation("de.hdodenhof:circleimageview:3.1.0")
